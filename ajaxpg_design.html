@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Weather Design</title>
+    <style>
+        html,body{
+            width: 100%;
+            font: 300 1em "Helvetica Neue";
+            padding: 3em;
+            margin: 0 auto;
+
+        }
+        div.weather_container{
+            margin: 0 auto;
+            width: 35%;
+            padding: 1em;
+            background-color: whitesmoke;
+            border-radius: 1px;
+            box-shadow: 0 0 5px gray;
+
+        }
+
+        div.city{
+            font-size: 1.5em;
+        }
+
+
+        div.date, div.weather_desc{
+            color: #888;
+            font-size: 1em;
+
+        }
+
+        div.container_2{
+
+            padding: 1em;
+            margin: 0 auto;
+            display: inline-block;
+
+        }
+
+
+        div.container_1{
+
+            padding: 1em;
+            margin: 0 auto;
+            display: inline-block;
+
+        }
+
+        .temp{
+            display: inline-block;
+            font-size: 2em;
+        }
+
+
+        div.right, div.left {
+
+            display: inline-block;
+
+            margin: 0.5em;
+
+        }
+
+        div.rt, div.lf {
+
+            display: inline-block;
+
+            margin: 0.5em;
+
+        }
+
+        div.container_1.lf{
+            display: inline-block;
+            float: left;
+        }
+
+        div.container_1.rt{
+            display: inline-block;
+            float: right;
+        }
+
+
+        div.container_2.left{
+            display: inline-block;
+            float: left;
+        }
+
+        div.container_2.right{
+            display: inline-block;
+            float: right;
+        }
+
+
+        
+        .pic{
+            display: inline-block;
+        }
+        
+        .temp{
+            display: inline-block;
+        }
+        .unit{
+            display: inline-block;
+            vertical-align: super;
+            font-size: 0.4em;
+        }
+    </style>
+</head>
+<body>
+ <div class="weather_container" >
+     <div class="container_1">
+         <div class="lf">
+         <div class = "city">
+             <a href="https://www.google.com/maps/place/New+York,+NY/@40.7056308,-73.9780035,10z/">City Name</a>
+         </div>
+         <div class =  "date">Day/Date</div>
+         <div class = "weather_desc">Weather Description</div>
+         </div>
+         <div class="rt">
+             <div class = "gmaps"><img src="http://cdn.thedroidguy.com/wp-content/uploads/2013/09/new-google-maps-logo-50x50.png?617318"></div>
+             
+         </div>
+     </div>
+
+     <div class="container_2">
+         <div class="left">
+            <div class="pic"> <img src="http://openweathermap.org/img/w/01d.png"></div>
+            <div class="temp">80
+                <span class="unit"> F|C </span>
+            </div>
+
+         </div>
+
+         <div class="right">
+             <div>Sunrise:19/6/2014 4:20:26 pm</div>
+             <div>Sunset:19/6/2014 4:20:26 pm</div>
+             <div>Wind speed: 5mph</div>
+             <div>Humidity: 29%</div>
+             <div>Pressure: 3465765867</div>
+         </div>
+     </div>
+ </div>
+
+</body>
+</html>
