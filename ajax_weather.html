@@ -15,17 +15,44 @@
         }
 
         div.original{
-            margin: 0 400px;            width: 35%;
+            margin: 0 400px;
+            width: 45%;
             padding: 1em;
             display: inline-block;
 
+        }
+
+        .welcome1#w{
+
+            margin-left: 90px;
+            font-weight: normal;
+            font-size: 2em;
+
+        }
+
+        .welcome1#to{
+            margin-left: 150px;
+        }
+
+        #welcome2{
+            font-size: 2em;
+            justify-content: center;
+            font-weight: normal;
+            font-family: "Helvetica Neue";
+            margin-left:30px;
+
+
+        }
+
+        .small{
+            font-size: 0.8em;
         }
 
         #inp{
             display: inline-block;
             box-shadow: 0 0 0.5em gray;
             height: 20px;
-            width: 300px;
+            width: 320px;
             border-radius: 6px;
             margin: 0 auto;
         }
@@ -124,7 +151,7 @@
                     /*
                     * Had to do this as the name field in the weather object received from the API is sometimes null.
                     * The logic of my entire project is based on using this field as the id for the HTML elements created.
-                    * Hence, if absent, i am setting that field to the cityname entered by the user so that the program
+           \         * Hence, if absent, i am setting that field to the cityname entered by the user so that the program
                     * does not break.
                     * */
                     if(obj.name ==="")
@@ -373,8 +400,15 @@
 <body>
 
 <div class="original">
-<input  type="text" id= "inp"/>
-<button id = "btn">Submit</button>
+    <div id="w" class="welcome1">Welcome </div>
+    <div id="to" class="welcome1">to </div>
+    <div id="welcome2"> Whats the Weather!</div>
+    <br>
+    <div class="small">Please enter the names of one or more US cities, separated by commas </div>
+    <div class="small">eg: New York, Seattle, Dallas</div>
+    <br>
+    <input  type="text" id= "inp"/>
+    <button id = "btn">Submit</button>
 </div>
 
 <br/>
